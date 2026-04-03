@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- EMERGENCY BANNER -->
+<div class="emergency-banner">
+  <i class="fa-solid fa-phone-volume"></i>
+  24/7 Emergency? Call us now:
+  <a href="tel:070 33333911">07033333911</a>
+  &nbsp;|&nbsp; We are always here for you 💙
+</div>
+
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <!-- <img class="fa-solid fa-bars" id="menuIcon" src="kouji-tsuru-cflQKNs2EcU-unsplash.jpg" alt=""> -->
+      Amina's<span>Hospital</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#appointment" class="nav-btn">Book Appointment</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <i class="fa-solid fa-bars" id="menuIcon"></i>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobileNav()">🏠 Home</a>
+    <a href="#about" onclick="closeMobileNav()">ℹ️ About Us</a>
+    <a href="#services" onclick="closeMobileNav()">🏥 Services</a>
+    <a href="#doctors" onclick="closeMobileNav()">👨‍⚕️ Doctors</a>
+    <a href="#appointment" onclick="closeMobileNav()">📅 Book Appointment</a>
+    <a href="#blog" onclick="closeMobileNav()">📰 Blog</a>
+    <a href="#contact" onclick="closeMobileNav()">📞 Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-tag">✨ Welcome to Amina's Hospital</div>
+          <h1>Your Health Is <span>Our Priority</span></h1>
+          <p>
+            Providing compassionate, world-class healthcare to every patient who walks through our doors.
+            We are here for you — 24 hours a day, 7 days a week.
+          </p>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-green">
+              <i class="fa-solid fa-calendar-plus" style="margin-right:6px;"></i> Book Appointment
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-phone" style="margin-right:6px;"></i> Contact Us
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>15,000+</h3>
+              <p>Patients Treated</p>
+            </div>
+            <div class="hero-stat">
+              <h3>50+</h3>
+              <p>Expert Doctors</p>
+            </div>
+            <div class="hero-stat">
+              <h3>20+</h3>
+              <p>Years of Service</p>
+            </div>
+            <div class="hero-stat">
+              <h3>24/7</h3>
+              <p>Emergency Care</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-box">
+            <i class="fa-solid fa-hospital-user" style="color:#90CAF9;"></i>
+            <h3>Trusted Healthcare</h3>
+            <p>Modern equipment.<br/>Caring professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Quick Links -->
+  <div class="quick-links">
+    <div class="container">
+      <div class="quick-grid">
+        <a href="#appointment" class="quick-item">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h4>Book Appointment</h4>
+        </a>
+        <a href="#" class="quick-item">
+          <i class="fa-solid fa-flask"></i>
+          <h4>Lab Results</h4>
+        </a>
+        <a href="#" class="quick-item">
+          <i class="fa-solid fa-file-medical"></i>
+          <h4>Patient Portal</h4>
+        </a>
+        <a href="#contact" class="quick-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Find Us</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <p style="color:var(--blue);font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">About Us</p>
+        <h2>More Than Just a <br/> Hospital — A Family</h2>
+        <p>
+          Amina's Hospital was founded in 2004 with a simple but powerful vision: <em>to make quality healthcare accessible and affordable for everyone</em>.
+          What started as a small clinic has grown into one of the most trusted healthcare facilities in the region.
+        </p>
+        <p>
+          We believe that every patient deserves to be treated with dignity, respect, and kindness.
+          Our team of over 50 specialists, nurses, and support staff work together every day to make that a reality.
+        </p>
+
+        <div class="about-values">
+          <h3>Our Core Values</h3>
+          <div class="value-item">
+            <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+            <div>
+              <h4>Compassion First</h4>
+              <p>We treat every patient like a member of our own family.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon"><i class="fa-solid fa-star"></i></div>
+            <div>
+              <h4>Excellence in Care</h4>
+              <p>We hold ourselves to the highest medical standards.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>Safety & Trust</h4>
+              <p>Your safety and privacy are always our top priority.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+            <div>
+              <h4>Community Focused</h4>
+              <p>We give back through free health outreaches and education.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right fade-in">
+        <div class="about-card">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>50+</h3>
+          <p>Specialist Doctors</p>
+        </div>
+        <div class="about-card green">
+          <i class="fa-solid fa-bed-pulse"></i>
+          <h3>200+</h3>
+          <p>Hospital Beds</p>
+        </div>
+        <div class="about-card">
+          <i class="fa-solid fa-vials"></i>
+          <h3>30+</h3>
+          <p>Lab Services</p>
+        </div>
+        <div class="about-card green">
+          <i class="fa-solid fa-award"></i>
+          <h3>20+</h3>
+          <p>Years of Service</p>
+        </div>
+        <div class="about-card" style="grid-column:span 2;">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3 style="font-size:1.1rem;margin-bottom:8px;">Our Mission</h3>
+          <p style="font-size:0.84rem;color:#555;">
+            "To deliver exceptional, patient-centered healthcare through innovation, compassion,
+            and a relentless commitment to excellence — improving the health and lives of every individual in our community."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section section-gray">
+  <div class="container">
+    <p class="section-label" style="text-align:center;color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">What We Offer</p>
+    <h2 class="section-title">Our <span>Medical Services</span></h2>
+    <p class="section-sub">We provide a wide range of healthcare services — all under one roof.</p>
+
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+        <h3>General Medicine</h3>
+        <p>Comprehensive diagnosis and treatment for common illnesses, chronic conditions, and preventive care for patients of all ages.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+        <h3>Pediatrics</h3>
+        <p>Specialized healthcare for children from newborns to teenagers, including vaccinations, growth monitoring, and treatment.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+        <h3>Maternity & Obstetrics</h3>
+        <p>Full antenatal, delivery, and postnatal care in our modern maternity ward. We welcome over 500 babies every year!</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-scalpel"></i></div>
+        <h3>Surgery</h3>
+        <p>State-of-the-art surgical facilities for general, laparoscopic, and specialized surgeries with experienced surgeons.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+        <h3>Laboratory</h3>
+        <p>Fast, accurate diagnostic testing including blood tests, urinalysis, imaging, and pathology services with quick results.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-pills"></i></div>
+        <h3>Pharmacy</h3>
+        <p>Our 24-hour in-house pharmacy stocks a wide range of medications and provides expert pharmaceutical advice.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Cardiology</h3>
+        <p>Advanced cardiac care including ECG, echocardiography, and management of heart disease and hypertension.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-bone"></i></div>
+        <h3>Orthopedics</h3>
+        <p>Expert care for bone, joint, and muscle conditions. We offer physiotherapy and orthopedic surgery services.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3>Ophthalmology</h3>
+        <p>Complete eye care services including vision tests, cataract surgery, and treatment of all eye conditions.</p>
+        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors" class="section">
+  <div class="container">
+    <p style="text-align:center;color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Meet the Team</p>
+    <h2 class="section-title">Our <span>Qualified Doctors</span></h2>
+    <p class="section-sub">Our team of dedicated specialists are here to take care of you.</p>
+
+    <div class="doctors-grid">
+      <div class="doctor-card fade-in">
+        <div class="doctor-photo">
+          <div class="doctor-avatar"><img src="401284.jpg" alt=""></div>
+          <div class="doctor-badge">Available</div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Amina sada mainasara</h3>
+          <div class="doctor-specialty"><i class="fa-solid fa-circle-dot" style="font-size:0.6rem;"></i> Medical Director & Cardiologist</div>
+          <p>Founder of Amina's Hospital with over 22 years of experience in cardiology and internal medicine. MBBS, MD (Cardiology), FWACP.</p>
+          <div class="doctor-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-calendar"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card fade-in">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,var(--green-light),#A5D6A7);">
+          <div class="doctor-avatar"><img src="vitaly-gariev-JJEOuvnY1Tw-unsplash.jpg" alt=""></div>
+          <div class="doctor-badge">Available</div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr.Adamu Ibrahim</h3>
+          <div class="doctor-specialty"><i class="fa-solid fa-circle-dot" style="font-size:0.6rem;"></i> Pediatrician</div>
+          <p>15 years caring for children. Specializes in newborn care, childhood immunization, and adolescent health. MBBS, FMCP (Paed).</p>
+          <div class="doctor-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-calendar"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card fade-in">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#FFF3E0,#FFCC80);">
+          <div class="doctor-avatar"><img src="vitaly-gariev-_zbqco3m7dA-unsplash.jpg" alt=""></div>
+          <div class="doctor-badge" style="background:var(--blue);">On Leave</div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. Fatima Bello</h3>
+          <div class="doctor-specialty"><i class="fa-solid fa-circle-dot" style="font-size:0.6rem;"></i> Obstetrician & Gynecologist</div>
+          <p>Award-winning OB/GYN with 18 years in maternal health, high-risk pregnancy, and minimally invasive surgery. MBBS, FWACS.</p>
+          <div class="doctor-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-calendar"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card fade-in">
+        <div class="doctor-photo" style="background:linear-gradient(135deg,#EDE7F6,#CE93D8);">
+          <div class="doctor-avatar"><img src="usman-yousaf-xM8fR-OGtHY-unsplash.jpg" alt=""></div>
+          <div class="doctor-badge">Available</div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr.Aliyu Abdulazeez </h3>
+          <div class="doctor-specialty"><i class="fa-solid fa-circle-dot" style="font-size:0.6rem;"></i> General Surgeon</div>
+          <p>Specialist in laparoscopic and general surgery with 14 years experience. Expert in abdominal and trauma surgery. MBBS, FWACS.</p>
+          <div class="doctor-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-calendar"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#" class="btn btn-blue">View All Doctors &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section section-blue">
+  <div class="container">
+    <p style="text-align:center;color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">What Patients Say</p>
+    <h2 class="section-title">Patient <span>Testimonials</span></h2>
+    <p class="section-sub">Real stories from real patients who trust us with their health.</p>
+
+    <div class="testi-grid">
+      <div class="testi-card fade-in">
+        <div class="testi-quote">"</div>
+        <p>I gave birth to my twins at Amina's Hospital and the experience was amazing. The nurses were so caring and Dr. Fatima was absolutely brilliant. I wouldn't go anywhere else!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">👩</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <h4>Mrs. Ngozi Adeyemi</h4>
+            <span>Mother of Twins, Lagos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-quote">"</div>
+        <p>After my heart surgery here, I feel like a brand new person. Dr. Amina and her team were professional, compassionate, and genuinely cared about my recovery. God bless them all!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">👴</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <h4>Alhaji Buba Musa</h4>
+            <span>Cardiac Patient, Abuja</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-quote">"</div>
+        <p>My son had an emergency at 2am and we rushed here. The emergency team was fast, calm, and professional. He recovered fully within a week. We are so grateful to this hospital!</p>
+        <div class="testi-author">
+          <div class="testi-avatar">👩</div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <h4>Mrs. Yetunde Okafor</h4>
+            <span>Parent, Port Harcourt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT BOOKING -->
+<section id="appointment" class="section">
+  <div class="container">
+    <div class="appt-wrapper">
+      <div class="appt-left fade-in">
+        <p style="color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">Book an Appointment</p>
+        <h2>Schedule Your Visit Today</h2>
+        <p>
+          Don't wait until it gets worse. Book an appointment with one of our specialists today and take the first step toward better health!
+        </p>
+
+        <div class="appt-info">
+          <div class="appt-info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Fri: 8:00am – 8:00pm<br/>Sat – Sun: 9:00am – 4:00pm</p>
+            </div>
+          </div>
+          <div class="appt-info-item">
+            <i class="fa-solid fa-ambulance"></i>
+            <div>
+              <h4>Emergency Services</h4>
+              <p>24 hours a day, 7 days a week, 365 days a year</p>
+            </div>
+          </div>
+          <div class="appt-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Call to Book</h4>
+              <p>07033333911<br/>07033333911</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="appt-form fade-in">
+          <h3><i class="fa-solid fa-calendar-plus" style="color:var(--blue);margin-right:8px;"></i> Book Appointment</h3>
+
+          <div class="form-success" id="apptSuccess">
+            ✅ Appointment booked successfully! We will call you within 24 hours to confirm.
+          </div>
+
+          <form id="apptForm" onsubmit="submitAppointment(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" placeholder="e.g. John Doe" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" placeholder="e.g. 07033333911" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="e.g. john@email.com" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Preferred Date *</label>
+                <input type="date" required />
+              </div>
+              <div class="form-group">
+                <label>Preferred Time</label>
+                <select>
+                  <option value="">Select time...</option>
+                  <option>8:00 AM – 10:00 AM</option>
+                  <option>10:00 AM – 12:00 PM</option>
+                  <option>12:00 PM – 2:00 PM</option>
+                  <option>2:00 PM – 4:00 PM</option>
+                  <option>4:00 PM – 6:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Department *</label>
+              <select required>
+                <option value="">Choose a department...</option>
+                <option>General Medicine</option>
+                <option>Pediatrics</option>
+                <option>Maternity & Obstetrics</option>
+                <option>Surgery</option>
+                <option>Cardiology</option>
+                <option>Orthopedics</option>
+                <option>Ophthalmology</option>
+                <option>Laboratory</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message / Symptoms (Optional)</label>
+              <textarea placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;border-radius:10px;padding:14px;">
+              <i class="fa-solid fa-calendar-check" style="margin-right:8px;"></i> Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY SECTION -->
+<section id="emergency">
+  <div class="container">
+    <i class="fa-solid fa-truck-medical"></i>
+    <h2>Emergency? We Are Ready — Right Now!</h2>
+    <p>Our emergency team is on standby 24/7. Don't wait. Call us immediately.</p>
+    <div class="emergency-num">📞 07033333911</div>
+    <br/>
+    <div class="emergency-badges">
+      <div class="emergency-badge">🚑 24/7 Emergency Unit</div>
+      <div class="emergency-badge">🏥 Fully Equipped ICU</div>
+      <div class="emergency-badge">🩸 Blood Bank Available</div>
+      <div class="emergency-badge">⚡ Fast Response Team</div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / HEALTH TIPS -->
+<section id="blog" class="section section-gray">
+  <div class="container">
+    <p style="text-align:center;color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Health Tips & News</p>
+    <h2 class="section-title">From Our <span>Medical Blog</span></h2>
+    <p class="section-sub">Stay informed with the latest health tips and hospital news from our team of experts.</p>
+
+    <div class="blog-grid">
+      <div class="blog-card fade-in">
+        <div class="blog-thumb">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>Health Tips</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag">Cardiology</div>
+          <h3>5 Simple Habits That Will Protect Your Heart Every Day</h3>
+          <p>Your heart works hard every second. Here are five easy lifestyle changes that can significantly reduce your risk of heart disease...</p>
+          <div class="blog-meta">
+            <i class="fa-solid fa-calendar"></i> January 15, 2025 &nbsp;·&nbsp;
+            <i class="fa-solid fa-user-doctor"></i> Dr. Amina Hassan
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card fade-in">
+        <div class="blog-thumb" style="background:var(--green-light);color:var(--green-dark);">
+          <i class="fa-solid fa-baby"></i>
+          <span>Parenting</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag" style="background:var(--green-light);color:var(--green-dark);">Pediatrics</div>
+          <h3>What Every Parent Needs to Know About Child Vaccinations</h3>
+          <p>Immunization is one of the most effective ways to protect your child from serious diseases. Here's a guide to the key vaccines...</p>
+          <div class="blog-meta">
+            <i class="fa-solid fa-calendar"></i> February 3, 2025 &nbsp;·&nbsp;
+            <i class="fa-solid fa-user-doctor"></i> Dr. Emeka Okonkwo
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card fade-in">
+        <div class="blog-thumb" style="background:#FFF3E0;color:#E65100;">
+          <i class="fa-solid fa-apple-whole"></i>
+          <span>Nutrition</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-tag" style="background:#FFF3E0;color:#E65100;">Wellness</div>
+          <h3>The Best Foods to Eat During Pregnancy for a Healthy Baby</h3>
+          <p>What you eat during pregnancy matters enormously. Dr. Fatima shares her top nutrition advice for expectant mothers...</p>
+          <div class="blog-meta">
+            <i class="fa-solid fa-calendar"></i> March 10, 2025 &nbsp;·&nbsp;
+            <i class="fa-solid fa-user-doctor"></i> Dr. Fatima Bello
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#" class="btn btn-blue">Read More Articles &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <p style="text-align:center;color:var(--blue);font-weight:700;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Get In Touch</p>
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <p class="section-sub">We'd love to hear from you. Reach out anytime!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>We Are Always Here For You</h3>
+        <p>Whether you have a question, need to book an appointment, or have feedback, our team is happy to help.</p>
+
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Our Address</h4>
+            <p>14 Hospital Road, G.R.A <br/>Kaduna state zaira.</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone Numbers</h4>
+            <p>07033333911 (General)<br/>07033333911 (Emergency)</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email Address</h4>
+            <p>info@aminashospital.com<br/>appointments@aminashospital.com</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Mon–Fri: 8:00am–8:00pm<br/>Sat–Sun: 9:00am–4:00pm (Emergency: 24/7)</p>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>📍 14 Hospital Road, Kaduna state zaira</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-blue" style="font-size:0.8rem;padding:8px 18px;margin-top:4px;">
+            <i class="fa-brands fa-google"></i> &nbsp;Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form fade-in">
+        <h3><i class="fa-solid fa-paper-plane" style="color:var(--blue);margin-right:8px;"></i> Send Us a Message</h3>
+
+        <div class="form-success" id="contactSuccess">
+          ✅ Message sent! Our team will get back to you within 24 hours.
+        </div>
+
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+234 000 000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option>General Inquiry</option>
+              <option>Book Appointment</option>
+              <option>Billing & Insurance</option>
+              <option>Feedback / Complaint</option>
+              <option>Emergency Query</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message *</label>
+            <textarea rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-green" style="width:100%;justify-content:center;border-radius:10px;padding:14px;">
+            <i class="fa-solid fa-paper-plane" style="margin-right:8px;"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff;">
+          <img src="acton-crawford-8PB_TFEy2XQ-unsplash.jpg" alt="">
+          Amina's<span style="color:#90CAF9;">Hospital</span>
+        </div>
+        <p>
+          Providing compassionate, world-class healthcare to our community since 2004.
+          Your health is our priority — always and in all ways. 💙
+        </p>
+        <div class="footer-socials">
+          <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">ℹ️ About Us</a></li>
+          <li><a href="#services">🏥 Services</a></li>
+          <li><a href="#doctors">👨‍⚕️ Our Doctors</a></li>
+          <li><a href="#appointment">📅 Appointments</a></li>
+          <li><a href="#contact">📞 Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">General Medicine</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Maternity</a></li>
+          <li><a href="#">Surgery</a></li>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Laboratory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">📍 14 Hospital Road, zaria</a></li>
+          <li><a href="tel:07033333911">📞 07033333911</a></li>
+          <li><a href="mailto:info@aminashospital.com">✉️ info@aminashospital.com</a></li>
+          <li><a href="#">🕐 Mon–Fri: 8am–8pm</a></li>
+          <li><a href="#emergency">🚨 Emergency: 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Amina's Hospital. All rights reserved. Made with ❤️ for our patients.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- Note: scrollBtn display is toggled by JS below -->
+
+<script src="script.js"></script>
+</body>
+</html> 
