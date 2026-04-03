@@ -452,20 +452,21 @@
             ✅ Appointment booked successfully! We will call you within 24 hours to confirm.
           </div>
 
-          <form id="apptForm" onsubmit="submitAppointment(event)">
+          <form class="form" id="apptForm"  action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b03de0a6-2f3b-49cb-8a97-00a0005d0a41">
             <div class="form-row">
               <div class="form-group">
                 <label>Full Name *</label>
-                <input type="text" placeholder="e.g. John Doe" required />
+                <input type="text" placeholder="e.g. John Doe" name="name" required />
               </div>
               <div class="form-group">
                 <label>Phone Number *</label>
-                <input type="tel" placeholder="e.g. 07033333911" required />
+                <input type="tel" placeholder="e.g. 07033333911" name="phone number" required />
               </div>
             </div>
             <div class="form-group">
               <label>Email Address</label>
-              <input type="email" placeholder="e.g. john@email.com" />
+              <input type="email" name="email" required placeholder="e.g. aminan@email.com" />
             </div>
             <div class="form-row">
               <div class="form-group">
@@ -474,7 +475,7 @@
               </div>
               <div class="form-group">
                 <label>Preferred Time</label>
-                <select>
+                <select name="time">
                   <option value="">Select time...</option>
                   <option>8:00 AM – 10:00 AM</option>
                   <option>10:00 AM – 12:00 PM</option>
@@ -486,7 +487,7 @@
             </div>
             <div class="form-group">
               <label>Department *</label>
-              <select required>
+              <select name="Department" required>
                 <option value="">Choose a department...</option>
                 <option>General Medicine</option>
                 <option>Pediatrics</option>
@@ -500,7 +501,7 @@
             </div>
             <div class="form-group">
               <label>Message / Symptoms (Optional)</label>
-              <textarea placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+              <textarea placeholder="Briefly describe your symptoms or reason for visit..." name="message" required></textarea>
             </div>
             <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;border-radius:10px;padding:14px;">
               <i class="fa-solid fa-calendar-check" style="margin-right:8px;"></i> Book Appointment
